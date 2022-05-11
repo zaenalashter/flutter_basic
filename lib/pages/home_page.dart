@@ -77,6 +77,27 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(
+                height: 70,
+              ),
+              Container(
+                width: 224,
+                height: 54,
+                child: RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(1160),
+                  ),
+                  color: whiteColor,
+                  onPressed: () {},
+                  child: Text(
+                    'Update Profile',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
