@@ -89,7 +89,27 @@ class HomePage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(1160),
                     ),
                     color: whiteColor,
-                    onPressed: () {},
+                    onPressed: () {
+                      showModalBottomSheet(
+                        context: context,
+                        builder: (context) {
+                          return Container(
+                            height: 200,
+                            padding: EdgeInsets.symmetric(
+                              vertical: 50,
+                            ),
+                            color: whiteColor,
+                            child: Column(
+                              children: [
+                                Text(
+                                  'Update Photo',
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      );
+                    },
                     child: Text(
                       'Update Profile',
                       style: TextStyle(
