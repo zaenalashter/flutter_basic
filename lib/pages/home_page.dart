@@ -94,7 +94,7 @@ class HomePage extends StatelessWidget {
                         context: context,
                         builder: (context) {
                           return Container(
-                            height: 200,
+                            height: 300,
                             padding: EdgeInsets.symmetric(
                               vertical: 50,
                             ),
@@ -103,6 +103,43 @@ class HomePage extends StatelessWidget {
                               children: [
                                 Text(
                                   'Update Photo',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 12,
+                                ),
+                                Text(
+                                  'You are only able to change \n the picture profile once',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: greyColor,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Container(
+                                  width: 224,
+                                  height: 55,
+                                  child: RaisedButton(
+                                    onPressed: () {},
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    color: orangeColor,
+                                    child: Text(
+                                      'Continue',
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: whiteColor,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
