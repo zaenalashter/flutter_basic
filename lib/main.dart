@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/pages/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Flutter Basic'),
         ),
-        body: Center(
-          child: Text('Hello World'),
+        body: Image.asset(
+          'images/primary.png',
+          fit: BoxFit.cover,
         ),
       ),
     );
