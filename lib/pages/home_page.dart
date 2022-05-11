@@ -5,6 +5,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColor,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -44,8 +45,38 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height:70,
-              )
+                height: 70,
+              ),
+              Wrap(
+                spacing: 38,
+                runSpacing: 40,
+                children: [
+                  Image.asset(
+                    'images/item1.png',
+                    width: 80,
+                  ),
+                  Image.asset(
+                    'images/item2.png',
+                    width: 80,
+                  ),
+                  Image.asset(
+                    'images/item3.png',
+                    width: 80,
+                  ),
+                  Image.asset(
+                    'images/item4.png',
+                    width: 80,
+                  ),
+                  Image.asset(
+                    'images/item5.png',
+                    width: 80,
+                  ),
+                  Image.asset(
+                    'images/item6.png',
+                    width: 80,
+                  ),
+                ],
+              ),
             ],
           ),
         ),
